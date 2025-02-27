@@ -1,69 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site pessoal de Diego Obici Parizzi">
+    <meta name="description" content="Site pessoal de Diego Obici Parizzi.">
     <meta name="author" content="Diego Obici Parizzi">
     <title>Diego Obici Parizzi - Site Pessoal</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            font-family: 'Proza Libre', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+
+        header img {
+            width: 180px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Estilos para o layout em zig-zag */
+        .zigzag:nth-child(even) {
+            margin-left: 15%;
+            text-align: right;
+        }
+
+        .zigzag:nth-child(odd) {
+            margin-right: 15%;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .zigzag {
+                margin: 0;
+                text-align: left !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <img src="img/FotoPerfil.png" class="rounded-circle" alt="Foto de Diego Obici Parizzi" width="150">
+    <header>
+        <img src="img/FotoPerfil.png" alt="Foto de Diego Obici Parizzi">
         <h1>Diego Obici Parizzi</h1>
         <p>Bem-vindo ao meu site pessoal!</p>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#quem-sou">Quem Sou</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#interesses">Interesses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sonhos">Sonhos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#timeline">Linha do Tempo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
 
-    <main class="container mt-4">
-        <section id="quem-sou" class="mb-4">
-            <h2>Quem Sou Eu</h2>
-            <p>Olá! Meu nome é <strong>Diego Obici Parizzi</strong>, e atualmente trabalho como <strong>Help Desk nível 3</strong> na <strong>Maxicon Systems</strong>.</p>
+    <div class="container">
+        <!-- Seções em zig-zag -->
+        <section id="o-mundo-comum" class="row zigzag">
+            <div class="col-md-12">
+                <p>Nasci em uma família simples e afetuosa no interior do Paraná, na pequena comunidade rural de Bragantina. Desde pequeno, minha curiosidade me impulsionava a entender o funcionamento das coisas ao meu redor. Cresci explorando o ambiente ao ar livre, aprendendo com minha família e desenvolvendo um senso prático e analítico.</p>
+            </div>
         </section>
 
-        <section id="interesses" class="mb-4">
-            <h2>Meus Interesses</h2>
-            <p>Gosto de estar com família e amigos, assistir séries e filmes, além de jogos de tabuleiro e origami.</p>
+        <section id="o-chamado-a-aventura" class="row zigzag">
+            <div class="col-md-12">
+                <p>A tecnologia demorou a chegar até mim, mas quando tive meu primeiro contato com um computador, fiquei fascinado. Inicialmente, utilizava para jogos e trabalhos escolares, mas percebi que poderia ser algo muito maior. No entanto, minha jornada profissional começou em outra direção: o ensino.</p>
+            </div>
         </section>
 
-        <section id="sonhos" class="mb-4">
-            <h2>Meus Sonhos</h2>
-            <p>Meu maior sonho é trabalhar e viver no exterior, buscando mais segurança e qualidade de vida.</p>
+        <section id="recusa-ao-chamado" class="row zigzag">
+            <div class="col-md-12">
+                <p>Sonhava em ser professor e cursei Formação de Docentes, mas, ao ingressar na faculdade de Ciências Sociais, enfrentei um grande obstáculo: a disciplina deixou de ser obrigatória na grade curricular do ensino médio. Frustrado, percebi que minha trajetória precisaria mudar.</p>
+            </div>
         </section>
 
-        <section id="timeline" class="mb-4">
-            <h2>Minha Linha do Tempo</h2>
-            <p>Aqui está um pouco da minha história, desde a infância até os dias atuais.</p>
+        <section id="encontro-com-o-mentor" class="row zigzag">
+            <div class="col-md-12">
+                <p>Enquanto trabalhava como office-boy em um escritório de contabilidade, comecei a formatar computadores e descobri um grande interesse na área de tecnologia. A oportunidade de transformar esse hobby em uma carreira surgiu quando decidi cursar Análise e Desenvolvimento de Sistemas e consegui minha primeira vaga na área de suporte técnico.</p>
+            </div>
         </section>
 
-        <section id="contato" class="mb-4">
-            <h2>Contato</h2>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diego-parizzi" target="_blank">Meu perfil</a></p>
-            <p><strong>E-mail:</strong> <a href="mailto:diego_parizzi@hotmail.com">diego_parizzi@hotmail.com</a></p>
+        <section id="atravessando-o-primeiro-limiar" class="row zigzag">
+            <div class="col-md-12">
+                <p>Deixei minha zona de conforto e ingressei no mundo da tecnologia. O aprendizado foi intenso e desafiador, mas a paixão pelo setor crescia a cada novo conhecimento adquirido. No entanto, minha jornada teve uma reviravolta: minha esposa recebeu uma oportunidade em outra cidade e, juntos, decidimos nos mudar. Essa decisão exigiu que eu trancasse a faculdade, mas consegui manter meu emprego no formato home office.</p>
+            </div>
         </section>
-    </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Diego Obici Parizzi. Todos os direitos reservados.</p>
+        <section id="testes-aliados-e-inimigos" class="row zigzag">
+            <div class="col-md-12">
+                <p>Trabalhar remotamente me trouxe desafios e aprendizados. A necessidade de disciplina, organização e evolução constante se tornaram fundamentais. No ano de 2024, minha esposa ingressou na mesma empresa que eu, e voltamos para Toledo. A grande notícia veio logo depois: fui aprovado para o curso de Tecnologia em Sistemas para Internet na UTFPR.</p>
+            </div>
+        </section>
+
+        <section id="aproximacao-da-caverna-oculta" class="row zigzag">
+            <div class="col-md-12">
+                <p>Com um novo recomeço acadêmico e profissional, decidi aprofundar meus estudos e buscar especialização em automação de testes, enxergando ali um futuro promissor. Comecei a me preparar para novos desafios, sempre focado em crescimento e aprimoramento.</p>
+            </div>
+        </section>
+
+        <section id="a-prova-de-fogo" class="row zigzag">
+            <div class="col-md-12">
+                <p>Os desafios pessoais e profissionais não pararam. Em meio a conquistas, também enfrentei perdas significativas, como a do meu primo, vizinho e amigo próximo. Esses momentos me fizeram refletir ainda mais sobre minha trajetória e reforçaram meu desejo de construir uma carreira sólida e uma vida equilibrada.</p>
+            </div>
+        </section>
+
+        <section id="a-recompensa" class="row zigzag">
+            <div class="col-md-12">
+                <p>Com experiência acumulada, um emprego consolidado e uma nova jornada acadêmica, percebi o valor de cada etapa da minha história. Minhas escolhas me trouxeram até aqui, e a busca por evolução contínua tornou-se um propósito.</p>
+            </div>
+        </section>
+
+        <section id="o-caminho-de-volta" class="row zigzag">
+            <div class="col-md-12">
+                <p>Agora, meu foco é concluir minha graduação na UTFPR, aprofundar minha especialização em tecnologia e explorar oportunidades que possam me levar a um futuro internacional. Sonho em trabalhar no exterior, buscando segurança, qualidade de vida e novos desafios.</p>
+            </div>
+        </section>
+
+        <section id="a-ressurreicao" class="row zigzag">
+            <div class="col-md-12">
+                <p>Minha jornada até aqui me ensinou que desafios são inevitáveis, mas superá-los é o que define o sucesso. Desenvolvi resiliência, aprendi com cada obstáculo e estou preparado para os próximos passos. A busca por conhecimento e crescimento pessoal continua.</p>
+            </div>
+        </section>
+
+        <section id="o-retorno-com-o-elixir" class="row zigzag">
+            <div class="col-md-12">
+                <p>Hoje, utilizo minhas experiências para construir um futuro sólido. Tenho planos de consolidar minha carreira na tecnologia, quitar meu apartamento e, no futuro, formar uma família, compartilhando com meus filhos os valores que aprendi ao longo dessa jornada. Minha história continua, e cada novo capítulo é uma oportunidade de evoluir ainda mais.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Diego Obici Parizzi. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,133 @@
+/* Estilização geral */
+body {
+    font-family: 'Proza Libre', sans-serif;
+    background: linear-gradient(to bottom, #FFD700, #0077FF);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: fadeIn 1s ease-in;
+    overflow-x: hidden;
+}
+
+/* Efeito de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cabeçalho */
+header {
+    background: radial-gradient(circle at center, #343a40, #343a40 70%, transparent 100%);
+    color: #FFD700;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+    border-radius: 10px;
+}
+
+header img {
+    width: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    border: 3px solid #FFD700;
+}
+
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.7);
+}
+
+/* Estilização das seções */
+.container {
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #FFD700, #0077FF) 1;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Efeito de hover - ampliação sutil e neon */
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: '\1F4C4'; /* Ícone decorativo antes do título */
+    margin-right: 10px;
+}
+
+/* Layout em zig-zag */
+.zigzag:nth-child(even) {
+    margin-left: 15%;
+    text-align: right;
+}
+
+.zigzag:nth-child(odd) {
+    margin-right: 15%;
+    text-align: left;
+}
+
+/* Botão "Voltar ao topo" */
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #343a40;
+    color: #FFD700;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#topButton:hover {
+    transform: scale(1.1);
+    background: #495057;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(to right, #343a40, #495057);
+    color: #FFD700;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .zigzag {
+        margin: 0;
+        text-align: left !important;
+    }
+}
