@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Certificados - Diego Obici Parizzi</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-background"></div>
+        <div class="header-content">
+            <div class="profile-image-container">
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029284078/EeQyugYwKEiLXVgn.webp" alt="Diego Obici Parizzi" class="profile-image">
+            </div>
+            <h1 class="profile-name">Diego Obici Parizzi</h1>
+            <p class="profile-subtitle">Bem-vindo ao meu site pessoal!</p>
+            <div class="header-divider"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">24</div>
+                    <p class="stat-label">Certificados</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <p class="stat-label">Categorias</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates-section">
+            <div class="container">
+                <div class="certificates-grid">
+                    <!-- Sidebar - Categories -->
+                    <aside class="sidebar">
+                        <h2 class="sidebar-title">Categorias</h2>
+                        <div class="categories-list">
+                            <button class="category-btn active" data-category="all">
+                                <span>Todos</span>
+                            </button>
+                            <button class="category-btn" data-category="programming">
+                                <span>Programação e Lógica</span>
+                                <span class="count">(5)</span>
+                            </button>
+                            <button class="category-btn" data-category="infrastructure">
+                                <span>Desenvolvimento e Infraestrutura</span>
+                                <span class="count">(6)</span>
+                            </button>
+                            <button class="category-btn" data-category="database">
+                                <span>Dados e Bancos de Dados</span>
+                                <span class="count">(3)</span>
+                            </button>
+                            <button class="category-btn" data-category="softskills">
+                                <span>Soft Skills e Comunicação</span>
+                                <span class="count">(8)</span>
+                            </button>
+                            <button class="category-btn" data-category="innovation">
+                                <span>Inovação e Multimídia</span>
+                                <span class="count">(2)</span>
+                            </button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Grid - Certificates -->
+                    <main class="certificates-main">
+                        <h2 class="certificates-title">Todos os Certificados</h2>
+                        <div class="certificates-grid-items" id="certificatesContainer">
+                            <!-- Certificates will be inserted here by JavaScript -->
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Diego Obici Parizzi. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js.js"></script>
+</body>
+</html>
